@@ -6,18 +6,48 @@
     <title>Perfil</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            background-color: #f3e5f5;
+            color: #4a148c;
+        }
+        .navbar {
+            background-color: #6a1b9a;
+        }
+        .navbar-brand, .nav-link {
+            color: #e1bee7 !important;
+        }
+        .container {
+            margin-top: 20px;
+        }
         .media-item {
-            margin-bottom: 15px;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ede7f6;
+            border-radius: 10px;
         }
         .media-item img, .media-item video {
             max-width: 100%;
             height: auto;
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #8e24aa;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #6a1b9a;
+        }
+        h1, h5 {
+            color: #4a148c;
+        }
+        .img-thumbnail {
+            border-color: #d1c4e9;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Talkint</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Momentix</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,20 +70,20 @@
         <div class="row">
             <div class="col-md-4">
                 <img src="img/imagen2.jpg" alt="Imagen de Perfil" class="img-thumbnail">
-                <h5>perrogordito200</h5>
-                <p>Soy un perro guau guau</p>
-                <p>Seguidores: 100</p>
-                <p>Seguidos: 150</p>
+                <h5>Daniela Mallozzi</h5>
+                <p>Estudiante de TI</p>
+                <p>Seguidores: 1,900</p>
+                <p>Seguidos: 650</p>
             </div>
             <div class="col-md-8">
                 <div class="media-item">
                     <img src="img/fondo3.jpg" alt="Imagen 1"><br><br>
-                    <p>Likes: 10 <button class="btn btn-primary btn-sm">Like 👍🏻</button></p>
+                    <p>Likes: 70 <button class="btn btn-primary btn-sm">Like 👍🏻</button></p>
                 </div>
                 <div class="media-item">
                     <video controls>
                         <source src="videos/DUKI - Goteo (Video Oficial).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
+                        Tu navegador no soporta el video.
                     </video><br><br>
                     <p>Likes: 20 <button class="btn btn-primary btn-sm">Like</button></p>
                 </div>

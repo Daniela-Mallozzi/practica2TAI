@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio</title>
+    <title>Página Principal</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            background-color: #f3e5f5;
+            color: #4a148c;
+        }
+        .navbar {
+            background-color: #6a1b9a;
+        }
+        .navbar-brand {
+            color: #e1bee7 !important;
+        }
+        .nav-link {
+            color: #d1c4e9 !important;
+        }
+        .container {
+            margin-top: 20px;
+        }
         .media-item {
-            margin-bottom: 15px;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ede7f6;
+            border-radius: 10px;
         }
         .media-item img, .media-item video {
             max-width: 100%;
             height: auto;
+            border-radius: 5px;
         }
-        
+        h1, h5 {
+            color: #4a148c;
+        }
     </style>
 </head>
 <body>
@@ -24,53 +46,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-    <a class="navbar-brand" href="#">Talkint</a> 
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="navb" class="navbar-collapse collapse hide">
-        <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="register.html"><span class="fas fa-user"></span>Registrase</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="login.html"><span class="fas fa-sign-in-alt"></span>Login</a>
-        </li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-expand-md sticky-top">
+        <a class="navbar-brand" href="#">Momentix</a> 
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navb" class="navbar-collapse collapse hide">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html"><span class="fas fa-user"></span> Registro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html"><span class="fas fa-sign-in-alt"></span> Iniciar Sesión</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container">
-        <h1 class="my-4">Bienvenido a Talkint</h1>
-        <p>Comparte momentos y experiencias con tus compas :D</p>
+        <h1 class="my-4">Bienvenido a Momentix</h1>
+        <p>Empieza a compartir fotos y videos con tus contactos.</p>
         <div class="row">
             <div class="col-md-4 media-item">
-                <img src="img/imagen1.jpg" alt="Imagen 1">
-                <h5>Barack Obama</h5>
-                <p>Me gustan las croquetas</p>
-                <p>Likes: 10</p>
+                <img src="img/fondo1.JPEG" alt="Imagen 1">
+                <h5>Daniela Mallozzi</h5>
+                <p>Mi mascota!</p>
+                <p>Likes: 60</p>
             </div>
             <div class="col-md-4 media-item">
-                <img src="img/imagen2.jpg" alt="Imagen 2">
-                <h5>perrogordito2003</h5>
-                <p>Aquí recien licenciado</p>
-                <p>Likes: 20</p>
+                <img src="img/7.PNG" alt="Imagen 2">
+                <h5>Refugio Hernandez</h5>
+                <p>Good day</p>
+                <p>Likes: 5</p>
             </div>
             <div class="col-md-4 media-item">
                 <video controls>
-                    <source src="videos/DUKI - Goteo (Video Oficial).mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    <source src="videos/giphy.gif" type="video/mp4">
+                    Tu navegador no soporta el video.
                 </video>
-                <h5>Amlo</h5>
-                <p>Dios escribio esto</p>
-                <p>Likes: 30</p>
+                <h5>Katia Martínez</h5>
+                <p>holaaa</p>
+                <p>Likes: 20</p>
             </div>
             <div class="col-md-4 media-item">
-                <img src="img/imagen3.jpg" alt="Imagen 2">
-                <h5>ratondienton</h5>
-                <p>Soy bonito</p>
-                <p>Likes: 15</p>
+                <img src="img/9.jpg" alt="Imagen 2">
+                <h5>Vanessa Manzano</h5>
+                <p>felizzzz</p>
+                <p>Likes: 45</p>
             </div>
         </div>
     </div>

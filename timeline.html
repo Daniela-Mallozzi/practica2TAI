@@ -6,11 +6,15 @@
     <title>Timeline</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            background-color: #f3e5f5;
+        }
         .media-item {
             margin-bottom: 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 10px;
+            background-color: #ffffff;
         }
         .media-item img, .media-item video {
             max-width: 100%;
@@ -20,6 +24,7 @@
         }
         .media-item h5 {
             margin-top: 0;
+            color: #6a1b9a;
         }
         .media-item p {
             margin-bottom: 5px;
@@ -27,26 +32,35 @@
         .btn-like {
             padding: 2px 8px;
             font-size: 0.8rem;
+            background-color: #8e24aa;
+            border: none;
+            color: #ffffff;
+        }
+        .btn-like:hover {
+            background-color: #6a1b9a;
+        }
+        h1 {
+            color: #4a148c;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="my-4">Timeline</h1>
+        <h1 class="my-4 text-center">Timeline</h1>
         <div class="media-item mx-auto text-center">
-            <h5>ratondienton</h5>
-            <img src="img/imagen3.jpg" alt="Imagen 1">
-            <p>Soy bonito</p>
-            <p>Likes: 10 <button class="btn btn-primary btn-like">Like</button></p>
+            <h5>Daniela Mallozzi</h5>
+            <img src="img/7.PNG" alt="Imagen 1">
+            <p>holaaa</p>
+            <p>Likes: 10 <button class="btn btn-like">Like 👍🏻</button></p>
         </div>
         <div class="media-item mx-auto text-center">
-            <h5>Amlo</h5>
+            <h5>Valentino mtz</h5>
             <video controls>
-                <source src="videos/DUKI - Goteo (Video Oficial).mp4" type="video/mp4">
+                <source src="videos/giphy.gif" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p>Dios escribio esto</p>
-            <p>Likes: 20 <button class="btn btn-primary btn-like">Like</button></p>
+            <p>holaaaa</p>
+            <p>Likes: 20 <button class="btn btn-like">Like 👍🏻</button></p>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

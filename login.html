@@ -11,19 +11,21 @@
             background-repeat: no-repeat;
             background-size: cover;
             transition: background-image 2s ease; /* Transición de 2 segundos */
+            color: #4a148c;
         }
         .login-container {
             max-width: 350px;
             margin: 80px auto;
             padding: 40px;
-            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
-            border: 1px solid #ddd;
+            background-color: rgba(237, 231, 246, 0.8); /* Fondo semitransparente en tono lila */
+            border: 1px solid #d1c4e9;
             text-align: center;
             border-radius: 10px;
         }
         .login-container h1 {
             font-size: 2rem;
             margin-bottom: 20px;
+            color: #6a1b9a;
         }
         .login-container form {
             width: 100%;
@@ -31,12 +33,20 @@
         .login-container img {
             width: 175px;
             margin-bottom: 20px;
+            border-radius: 10px;
         }
         .login-container .form-group {
             margin-bottom: 10px;
         }
         .login-container .form-check {
             margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #8e24aa;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #6a1b9a;
         }
     </style>
 </head>
@@ -66,13 +76,13 @@
     <script>
         $(document).ready(function(){
 
-            let backgrounds = ['img/fondo1.jpg', 'img/fondo2.jpg', 'img/fondo3.jpg', 'img/fondo4.jpg'];
+            let backgrounds = ['img/fondo1.JPEG', 'img/fondo2.jpg', 'img/fondo3.jpg', 'img/fondo4.jpg'];
             let index = 0;
 
             function changeBackground() {
                 $('body').css('background-image', 'url(' + backgrounds[index] + ')');
                 index = (index + 1) % backgrounds.length; // Avanzar al siguiente fondo circularmente
-                setTimeout(changeBackground, 3500); // Cambiar cada 5 segundos
+                setTimeout(changeBackground, 3500); // Cambiar cada 3.5 segundos
             }
 
             changeBackground(); // Iniciar cambio de fondo
